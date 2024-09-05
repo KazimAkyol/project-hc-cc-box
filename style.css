@@ -4,16 +4,20 @@
   box-sizing: border-box;
 }
 
-body {
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 0.7fr;
+    grid-template-rows: 1fr 2fr 1.5fr 0.7fr;
+    height: 100vh;
+    width: 80vh;
+    gap: 20px;
+    padding: 20px;
 }
 
-.box1 {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin: 20px;
-  padding: 40px;
-  border: 1px solid blue;
-  background-color: #4169e1;
-  color: #fff;
+.content{
+    border: 2px solid;
+    background-color: rgb(66, 106, 227);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
